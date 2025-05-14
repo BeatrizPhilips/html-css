@@ -56,27 +56,74 @@ body {
 }
 
 .rodape {
+    display: flex;
+    justify-content: space-around;
     color: #e0e0e0;
-    padding: 1% 20%;
-    gap: 1rem;
-    background-color: gray;
+    padding: 1% 5%;
+    gap: 5rem;
+    background-color: #333;
+    border-top: 2px solid #9b59b6;
+    align-items: center;
 }
 
 .rodape_paragrafo {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    font-family:'Montserraf', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 1.1rem;  
+    line-height: 2rem;  
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 400;
 }
 
 .rodape_link {
+    width: 35%;
     display: flex;
     justify-content: space-around;
-    gap: 1.2rem;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    font-family:'Montserraf', sans-serif;
-    font-style: none;
+    gap: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #e0e0e0;
+
 }
 
+.rodape_link a:hover {
+    color: #9b59b6;
+}
+
+.botao {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #9b59b6;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 1rem 0;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #8e44ad;
+}
+
+.apresentacao_conteudo_formulario {
+    display: none;
+    padding: 2rem;
+    border: 2px solid #9b59b6;
+    border-radius: 1rem;
+    background-color: #f4f4f4;
+    max-width: 3rem;
+    margin: 1rem auto;
+}
+
+
+#toggleFormulario:checked + .botao + .apresentacao_conteudo_formulario {
+    display: block;
+}
 
 
