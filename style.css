@@ -1,4 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+} 
+
 body {
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 8%;
+    gap: 5rem;
+}
+
+.apresentacao_conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    border: 0.2rem solid #9b59b6;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.apresentacao_conteudo_titulo {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao_conteudo_paragrafo {
+    text-indent: 1.5rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-family:'Montserraf', sans-serif;
+}
+
+
+.apresentacao_conteudo_lista {
+    font-family:'Montserraf', sans-serif;
+    list-style-position: outside;
+    list-style-type: disc; /* ou circle, square */
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 300; 
+}
+
+.apresentacao_conteudo_lista li {
+    margin-bottom: 0.5rem;
+}
+
+.rodape {
+    color: #e0e0e0;
+    padding: 1% 20%;
+    gap: 1rem;
+    background-color: gray;
+}
+
+.rodape_paragrafo {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family:'Montserraf', sans-serif;
+}
+
+.rodape_link {
     display: flex;
     justify-content: space-around;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family:'Montserraf', sans-serif;
+    font-style: none;
 }
+
+
+
