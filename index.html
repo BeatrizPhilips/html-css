@@ -7,6 +7,16 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="buttons">
+            <button id="toggle" class="button">
+                <img class="button_img" src="assets/dark-mode.svg">
+            </button>
+            <button id="refresh" class="button">
+                <img class="button_img" src="assets/refresh.svg">
+        </button>
+    </div>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao_conteudo">
             <H1 class="apresentacao_conteudo_titulo">Sobre mim</H1>
@@ -20,18 +30,21 @@
                     <li>Sertanejo e Pop 2000's</li>
                 </ul>
             </div>
-            <input type="checkbox" id="toggleFormulario" class="toggle" />
-            <label for="toggleFormulario" class="botao">Formulário de contato</label>
-            <div class="modal">
+            <button class="openModal" id="openModal">Formulário de contato</button>
+            <div class="modal" id="modalOverlay">
                 <div class="modal_conteudo">
-                    <label for="toggleFormulario" class="fechar">&times;</label>
+                    <button id="closeModal" class="fechar">&times;</button>
                     <h2 class="modal_conteudo_paragrafo">Contato</h2>
-                    <form>
+                    <form class="formulario">
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <button type="submit">Enviar</button>
+                        <input type="email" id="email" name="email" placeholder="seuemail@gmail.com" required>
+                        <label for="celular">Telefone: </label>
+                        <input type="tel" id="celular" name="celular" placeholder="(99) 9 9999-9999" oninput="mascaraTelefone(this)">
+                        <label for="message">Mensagem: </label>
+                        <input type="textarea" placeholder="Digite sua mensagem" id="message" name="message" required>
+                        <button type="submit" onclick="Enviar()">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -54,7 +67,7 @@
                 <img src="/assets/github.svg"> GitHub
             </a>
         </div>
-
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
