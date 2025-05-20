@@ -28,8 +28,9 @@ window.onload = function(){
 }
 
 function Enviar(){
-    if (email.value === "" || nome.value === "" || message.value === ""){
-        alert("Insira os campos requiridos.")
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email.value === "" || nome.value === "" || message.value === "" || !emailRegex.test(email.value)){
+        alert("Preencha todos os campos corretamente.")
         return
     }
 
