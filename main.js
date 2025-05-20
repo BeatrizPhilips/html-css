@@ -15,7 +15,7 @@ const refresh = document.getElementById('refresh');
 
 
 toggle.addEventListener('click', () =>{
-    document.body.classList.toggle('dark');
+    document.body.classList.toggle('light');
 })
 
 refresh.addEventListener('click', () => {
