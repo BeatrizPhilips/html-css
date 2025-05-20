@@ -12,14 +12,10 @@ const modalOverlay = document.getElementById('modalOverlay');
 
 const toggle = document.getElementById('toggle');
 const refresh = document.getElementById('refresh');
-const theme = window.localStorage.getItem("theme");
 
 
 toggle.addEventListener('click', () =>{
     document.body.classList.toggle('dark');
-    if(theme === 'dark'){
-        window.localStorage.setItem('theme', 'light');
-    } else window.localStorage.setItem('theme', 'dark');
 })
 
 refresh.addEventListener('click', () => {

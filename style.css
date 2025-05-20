@@ -191,20 +191,20 @@ header {
     align-items: center; 
 }
 
-body.dark {
+body.light {
     background-color: #f4f4f4;
     color: black;
 }
 
-body.dark .rodape{
+body.light .rodape{
     background-color: #f4f4f4;
 }
 
-body.dark .rodape_link {
+body.light .rodape_link {
     color: black;
 }
 
-body.dark .button_img{
+body.light .button_img{
     filter: none;
 }
 
